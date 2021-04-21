@@ -1,5 +1,5 @@
-# 处理CSV
-导入,导出,读取
+# 处理CSV类库 thinkcsv
+csv导入,导出,读取
 
 ## 官网 
 http://www.waytomilky.com/
