@@ -5,7 +5,7 @@
 http://www.waytomilky.com/
 
 ## 安装
-> composer require wenhainan/csv
+> composer require wenhainan/thinkcsv
 
 # 交流qq群
  `606645328`
@@ -19,7 +19,7 @@ http://www.waytomilky.com/
             ['小黑', '女', 17699019191],
             ['小白', '女', 17699019191],
         ];
-        $csv = new Csv('1.csv',$header,$data);
+        $csv = new thinkcsv('1.csv',$header,$data);
         $csv->export();
 ```
 

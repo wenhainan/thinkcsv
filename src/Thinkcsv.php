@@ -7,7 +7,7 @@ namespace think\wenhainan;
  * Email: whndeweilai@gmail.com
  * DateTime: 2020/3/15
  */
-class Csv {
+class Thinkcsv {
     public $filename;
     public $header;
     public $docdata;

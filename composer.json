@@ -1,7 +1,7 @@
 {
-    "name": "wenhainan/csv",
+    "name": "wenhainan/thinkcsv",
     "description": "csv处理组件,导入导出csv",
-    "homepage": "https://github.com/wenhainan/csv",
+    "homepage": "https://github.com/wenhainan/thinkcsv",
     "license": "Apache-2.0",
     "minimum-stability": "stable",
     "version": "1.0.0",
@@ -12,7 +12,7 @@
         }
     ],
     "support": {
-        "issues": "https://github.com/wenhainan/csv/issues"
+        "issues": "https://github.com/wenhainan/thinkcsv/issues"
     },
     "require": {
         "php": ">=5.4.0"
