@@ -1,14 +1,11 @@
 # 处理CSV类库 thinkcsv
 csv导入,导出,读取
 
-## 官网 
-http://www.waytomilky.com/
+
 
 ## 安装
 > composer require wenhainan/thinkcsv
 
-# 交流qq群
- `606645328`
 
 ### 使用
 ```
@@ -36,4 +33,9 @@ http://www.waytomilky.com/
     $data = Thinkcsv::readCsvData($filepath);
 ```
 
+## 官网
+http://www.waytomilky.com/
+
+# 交流qq群
+`606645328`
 
