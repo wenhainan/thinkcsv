@@ -5,7 +5,7 @@ csv导入,导出,读取
 
 ## 说明
 * thinkphp官方推荐扩展,请放心使用!
-* 支持thinkphp5.0 thinkphp6.0 lavarel  yii2.0等支持psr-4自动加载机制的开源框架 
+* 支持thinkphp5.0 thinkphp6.0 lavarel  yii2.0等psr-4自动加载机制的开源框架 
 * 最后,给颗星星吧!嘿嘿
 
 
