@@ -75,7 +75,7 @@ class Thinkcsv {
      * 服务器存储csv,生成文件链接给到前端
      */
     public function csvtoFile(){
-        $filename = ROOT_PATH."/public/".$this->filename;
+        $filename = (defined('ROOT_PATH') ? ROOT_PATH : root_path())."/public/".$this->filename;
         ini_set('memory_limit','512M');
         ini_set('max_execution_time',0);
         ob_end_clean();
@@ -84,7 +84,7 @@ class Thinkcsv {
         //header("Content-type:application/vnd.ms-excel");
         header("Content-Disposition:attachment;filename=".$filename);
         @file_put_contents($filename,'');
-        @chmod(0777,$filename);
+        @chmod($filename, 0777);
         $fp=fopen($filename,'w');
         fwrite($fp, chr(0xEF).chr(0xBB).chr(0xBF));//转码 防止乱码(比如微信昵称(乱七八糟的))
         fputcsv($fp,$this->header);
