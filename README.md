@@ -30,7 +30,7 @@ csv导入,导出,读取
     $csv = new Thinkcsv('demo.csv',$header,$data);
     $csv->export();
     
-    //后端执行,无需浏览器访问,本例文件生成在   /网站根目录/upload/demo.csv
+    //无需浏览器直接访问的方法执行，比如在调用另外一个方法。本例文件生成在   /网站根目录/upload/demo.csv
     $csv = new Thinkcsv('upload/demo.csv',$header,$data);
     $csv->csvtoFile();
     
