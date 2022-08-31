@@ -130,16 +130,21 @@ class Thinkcsv {
      * @param $filePath
      * @return mixed
      */
-    static function readCsvData($filePath){
+    static function readCsvData($filePath,$remove_header = true){
         $handle = fopen( $filePath, "rb" );
         $data = [];
         while (!feof($handle)) {
-            $data[] = fgetcsv($handle);
+            $tmp = fgetcsv($handle);
+            if($tmp !== false){
+                $data[] = $tmp;
+            }
         }
         fclose($handle);
 
         $data = eval('return ' . iconv('gb2312', 'utf-8', var_export($data, true)) . ';');	//字符转码操作
-
+        if($remove_header){
+            array_shift($data);
+        }
         return $data;
     }
 }
