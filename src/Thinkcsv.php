@@ -138,7 +138,7 @@ class Thinkcsv {
         }
         fclose($handle);
 
-        $data = eval('return ' . iconv('gb2312', 'utf-8', var_export($data, true)) . ';');	//字符转码操作
+        //$data = eval('return ' . iconv('gb2312', 'utf-8', var_export($data, true)) . ';');	//字符转码操作
 
         return $data;
     }
