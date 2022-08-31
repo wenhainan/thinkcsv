@@ -36,7 +36,8 @@ csv导入,导出,读取
     
     //读取文件 $filepath文件路径
     $filepath = 'public/demo.csv';
-    $data = Thinkcsv::readCsvData($filepath);
+    $data = Thinkcsv::readCsvData($filepath);          //默认去除标题行
+    $data = Thinkcsv::readCsvData($filepath,false);    //不去除标题行
 ```
 
 ## 官网
