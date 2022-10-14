@@ -35,6 +35,7 @@ class Thinkcsv {
      */
     function export()
     {
+        @ob_clean();
         //下载csv的文件名
         $fileName = $this->filename;
         //设置header头
