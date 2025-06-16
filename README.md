@@ -9,7 +9,6 @@ csv导入,导出,读取
 * 支持thinkphp5.0 thinkphp6.0 lavarel  yii2.0等PSR-4自动加载机制的开源框架 
 * 最后,给颗星星吧!嘿嘿
 
-
 ## 安装
 > composer require wenhainan/thinkcsv
 
@@ -43,7 +42,4 @@ csv导入,导出,读取
 
 ## 官网
 http://www.waytomilky.com/
-
-# 交流qq群
-`606645328`
 
