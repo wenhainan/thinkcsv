@@ -76,7 +76,8 @@ class Thinkcsv {
      * 服务器存储csv,生成文件链接给到前端
      */
     public function csvtoFile(){
-        $filename = (defined('ROOT_PATH') ? ROOT_PATH : root_path())."/public/".$this->filename;
+        //$filename = (defined('ROOT_PATH') ? ROOT_PATH : root_path())."/public/".$this->filename;
+        $filename = $this->filename;
         ini_set('memory_limit','512M');
         ini_set('max_execution_time',0);
         ob_end_clean();
