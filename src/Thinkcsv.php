@@ -80,10 +80,11 @@ class Thinkcsv {
         $filename = $this->filename;
         ini_set('memory_limit','512M');
         ini_set('max_execution_time',0);
-        ob_end_clean();
-        ob_start();
-        header("Content-Type:application/vnd.openxmlformats-officedocument.spreadsheetml.sheet");
+        // ob_end_clean();
+        // ob_start();
+        //header("Content-Type:application/vnd.openxmlformats-officedocument.spreadsheetml.sheet");
         //header("Content-type:application/vnd.ms-excel");
+        header('Content-Type: text/csv; charset=utf-8');
         header("Content-Disposition:attachment;filename=".$filename);
         @file_put_contents($filename,'');
         @chmod($filename, 0777);
@@ -100,9 +101,11 @@ class Thinkcsv {
             $index++;
             fputcsv($fp,$item);
         }
-        ob_flush();
-        flush();
-        ob_end_clean();
+        fclose($fp);
+        exit;
+        // ob_flush();
+        // flush();
+        // ob_end_clean();
     }
     /**
      * Notes:  读取csv数据
